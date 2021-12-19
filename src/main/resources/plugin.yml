@@ -1,0 +1,14 @@
+name: SkyWars
+author: Maxbans9
+main: me.MaxBans.SkyWars.SkyWarsPlugin
+version: 1.0
+api-version: 1.16
+softdepend: ['Multiverse-Core', 'HolographicDisplays']
+
+commands:
+  game:
+  map:
+  vote:
+  top:
+  spectator:
+  rate:

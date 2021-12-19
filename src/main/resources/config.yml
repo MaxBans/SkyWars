@@ -1,0 +1,676 @@
+settings:
+  MySQL:
+    usemysql: true
+    host: "localhost"
+    port: 3306
+    database: "helheim"
+    username: "root"
+    password: ""
+
+  #How many needs to be on server to start the game
+  playersNeeded: 2
+  #How many needs to be on server to skip the time
+  skipTimePlayers: 2
+  #GameWorld: Aegis
+  reduce-time: 10
+
+  serverName: SkyWars-1
+
+  #Amount of points given to player on winning a game
+  Points-Win: 3
+  #Amount of points given to player on killing another player
+  Points-Kill: 1
+  #Amount of points given to player on playing a game
+  Points-Play: 1
+
+  #Amount of coins given to player on winning a game
+  Coins-Win: 20
+  #Amount of coins given to player on killing a player
+  Coins-Kill: 3
+
+  maps:
+    - Atlantis
+    - Halloween
+  ###################
+  #SPAWN SECTION
+  ###################
+  spawns:
+    lobby:
+      world: lobby
+      x: 830
+      y: 25
+      z: 229
+
+    WinLocation:
+      world: WinLobby
+      locations:
+        - "1,63,11"
+        - "-1,63,11"
+        - "-8,63,8"
+        - "-11,63,1"
+        - "-11,63,-1"
+        - "-8,63,-7"
+        - "-1,63,-11"
+        - "1,63,11"
+        - "11,63,-1"
+        - "11,63,1"
+        - "7,63,8"
+      Winner:
+        world: WinLobby
+        x: 0.498
+        y: 66
+        z: 0.435
+
+    ############################
+
+    Halloween:
+      spectator:
+        x: -1
+        y: 69
+        z: 0
+      centerBorder1:
+        x: 0
+        z: 0
+        size: 190
+        shrinkSpeed: 1
+        startTime: 240
+        endTime: 180
+      centerBorder2:
+        shrinkSpeed: 2
+        startTime: 120
+        endTime: 90
+      spawn-0:
+        x: -20
+        y: 65
+        z: -54
+      spawn-1:
+        x: 0
+        y: 65
+        z: -74
+      spawn-2:
+        x: 20
+        y: 65
+        z: -54
+      spawn-3:
+        x: 54
+        y: 65
+        z: -20
+      spawn-4:
+        x: 74
+        y: 65
+        z: 0
+      spawn-5:
+        x: 54
+        y: 65
+        z: 20
+      spawn-6:
+        x: 20
+        y: 65
+        z: 54
+      spawn-7:
+        x: 0
+        y: 65
+        z: 74
+      spawn-8:
+        x: -20
+        y: 65
+        z: 54
+      spawn-9:
+        x: -54
+        y: 65
+        z: 20
+      spawn-10:
+        x: -74
+        y: 65
+        z: 0
+      spawn-11:
+        x: -54
+        y: 65
+        z: -20
+    ####################################################################
+    Atlantis:
+      spectator:
+        x: 1
+        y: 87
+        z: 5
+      centerBorder1:
+        x: 0
+        z: 0
+        size: 190
+        shrinkSpeed: 1
+        startTime: 240
+        endTime: 180
+      centerBorder2:
+        shrinkSpeed: 2
+        startTime: 120
+        endTime: 90
+      spawn-0:
+        x: -78
+        y: 66
+        z: 0
+      spawn-1:
+        x: -71
+        y: 66
+        z: 32
+      spawn-2:
+        x: -32
+        y: 66
+        z: 71
+      spawn-3:
+        x: 0
+        y: 66
+        z: 78
+      spawn-4:
+        x: 32
+        y: 66
+        z: 71
+      spawn-5:
+        x: 71
+        y: 66
+        z: 32
+      spawn-6:
+        x: 78
+        y: 66
+        z: 0
+      spawn-7:
+        x: 71
+        y: 66
+        z: -32
+      spawn-8:
+        x: -32
+        y: 66
+        z: -71
+      spawn-9:
+        x: 0
+        y: 66
+        z: -78
+      spawn-10:
+        x: 32
+        y: 66
+        z: -71
+      spawn-11:
+        x: -71
+        y: 66
+        z: 32
+
+
+###################################
+
+#####################
+#CHEST SECTION
+#####################
+
+lootItems:
+  0:
+    material: WOOD
+    name: "Wood Plank"
+    chance: 0.50
+    minAmount: 8
+    maxAmount: 16
+  1:
+    material: STONE
+    name: "Stone"
+    chance: 0.35
+    minAmount: 8
+    maxAmount: 16
+  2:
+    material: SNOW_BALL
+    name: "Snowball"
+    chance: 0.15
+    minAmount: 8
+    maxAmount: 8
+  3:
+    material: EGG
+    name: "Egg"
+    chance: 0.15
+    minAmount: 8
+    maxAmount: 8
+  4:
+    material: ARROW
+    name: "Arrow"
+    chance: 0.15
+    minAmount: 8
+    maxAmount: 8
+  5:
+    material: STONE_AXE
+    name: "Stone Axe"
+    chance: 0.30
+    minAmount: 1
+    maxAmount: 1
+  6:
+    material: STONE_PICKAXE
+    name: "STONE Pickaxe"
+    chance: 0.20
+    minAmount: 1
+    maxAmount: 1
+  7:
+    material: STONE_SWORD
+    name: "Stone Sword"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  8:
+    material: BOW
+    name: "Bow"
+    chance: 0.20
+    minAmount: 1
+    maxAmount: 1
+  9:
+    material: LEATHER_HELMET
+    name: "Leather Helmet"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  10:
+    material: LEATHER_CHESTPLATE
+    name: "Leather Chestplate"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  11:
+    material: LEATHER_LEGGINGS
+    name: "Leather Leggings"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  12:
+    material: LEATHER_BOOTS
+    name: "Leather Boots"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  13:
+    material: COOKED_BEEF
+    name: "Cooked Beef"
+    chance: 0.25
+    minAmount: 2
+    maxAmount: 4
+  14:
+    material: APPLE
+    name: "Apple"
+    chance: 0.30
+    minAmount: 4
+    maxAmount: 8
+  15:
+    material: WATER_BUCKET
+    name: "Water Bucket"
+    chance: 0.20
+    minAmount: 1
+    maxAmount: 1
+  16:
+    material: LAVA_BUCKET
+    name: "Lava Bucket"
+    chance: 0.20
+    minAmount: 1
+    maxAmount: 1
+
+
+#########################################################
+#########################################################
+
+middleItems:
+  0:
+    material: WOOD
+    name: "Wood Plank"
+    chance: 0.30
+    minAmount: 16
+    maxAmount: 32
+  1:
+    material: STONE
+    name: "Stone"
+    chance: 0.25
+    minAmount: 16
+    maxAmount: 32
+  2:
+    material: SNOW_BALL
+    name: "Snowball"
+    chance: 0.15
+    minAmount: 8
+    maxAmount: 8
+  3:
+    material: EGG
+    name: "Egg"
+    chance: 0.15
+    minAmount: 8
+    maxAmount: 8
+  4:
+    material: ARROW
+    name: "Arrow"
+    chance: 0.15
+    minAmount: 16
+    maxAmount: 16
+  5:
+    material: ENDER_PEARL
+    name: "Ender Pearl"
+    chance: 0.22
+    minAmount: 1
+    maxAmount: 4
+  6:
+    material: IRON_AXE
+    name: "Iron Axe"
+    chance: 0.30
+    minAmount: 1
+    maxAmount: 1
+  7:
+    material: IRON_PICKAXE
+    name: "Iron Pickaxe"
+    chance: 0.30
+    minAmount: 1
+    maxAmount: 1
+  8:
+    material: DIAMOND_AXE
+    name: "Diamond Axe"
+    chance: 0.11
+    minAmount: 1
+    maxAmount: 1
+  9:
+    material: DIAMOND_PICKAXE
+    name: "Diamond Pickaxe"
+    chance: 0.11
+    minAmount: 1
+    maxAmount: 1
+  10:
+    material: IRON_SWORD
+    name: "Iron Sword"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  11:
+    material: DIAMOND_SWORD
+    name: "Diamond Sword"
+    chance: 0.11
+    minAmount: 1
+    maxAmount: 1
+  12:
+    material: BOW
+    name: "Bow"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  13:
+    material: FLINT_AND_STEEL
+    name: "Flint and Steel"
+    chance: 0.20
+    minAmount: 1
+    maxAmount: 1
+  14:
+    material: FISHING_ROD
+    name: "Fishing Rod"
+    chance: 0.20
+    minAmount: 1
+    maxAmount: 1
+  15:
+    material: IRON_HELMET
+    name: "Iron Helmet"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  16:
+    material: IRON_CHESTPLATE
+    name: "Iron Chestplate"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  17:
+    material: IRON_LEGGINGS
+    name: "Iron Leggings"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  18:
+    material: IRON_BOOTS
+    name: "Iron Boots"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  19:
+    material: DIAMOND_HELMET
+    name: "DIAMOND Helmet"
+    chance: 0.11
+    minAmount: 1
+    maxAmount: 1
+  20:
+    material: DIAMOND_CHESTPLATE
+    name: "Diamond Chestplate"
+    chance: 0.11
+    minAmount: 1
+    maxAmount: 1
+  21:
+    material: DIAMOND_LEGGINGS
+    name: "Diamond Leggings"
+    chance: 0.11
+    minAmount: 1
+    maxAmount: 1
+  22:
+    material: DIAMOND_BOOTS
+    name: "Diamond Boots"
+    chance: 0.11
+    minAmount: 1
+    maxAmount: 1
+  23:
+    material: COOKED_BEEF
+    name: "Cooked Beaf"
+    chance: 0.25
+    minAmount: 10
+    maxAmount: 16
+  24:
+    material: GOLDEN_APPLE
+    name: "Golden Apple"
+    chance: 0.20
+    minAmount: 1
+    maxAmount: 1
+  25:
+    material: WATER_BUCKET
+    name: "Water Bucket"
+    chance: 0.20
+    minAmount: 1
+    maxAmount: 1
+  26:
+    material: LAVA_BUCKET
+    name: "Lava Bucket"
+    chance: 0.20
+    minAmount: 1
+    maxAmount: 1
+
+#######################
+ringItems:
+  0:
+    material: WOOD
+    name: "Wood Plank"
+    chance: 0.30
+    minAmount: 16
+    maxAmount: 32
+  1:
+    material: STONE
+    name: "Stone"
+    chance: 0.25
+    minAmount: 16
+    maxAmount: 32
+  2:
+    material: SNOW_BALL
+    name: "Snowball"
+    chance: 0.15
+    minAmount: 8
+    maxAmount: 8
+  3:
+    material: EGG
+    name: "Egg"
+    chance: 0.15
+    minAmount: 8
+    maxAmount: 8
+  4:
+    material: ARROW
+    name: "Arrow"
+    chance: 0.15
+    minAmount: 8
+    maxAmount: 8
+  5:
+    material: STONE_AXE
+    name: "Stone Axe"
+    chance: 0.30
+    minAmount: 1
+    maxAmount: 1
+  6:
+    material: STONE_PICKAXE
+    name: "Stone Pickaxe"
+    chance: 0.30
+    minAmount: 1
+    maxAmount: 1
+  7:
+    material: GOLD_AXE
+    name: "Golden Axe"
+    chance: 0.30
+    minAmount: 1
+    maxAmount: 1
+  8:
+    material: GOLD_PICKAXE
+    name: "Golden Pickaxe"
+    chance: 0.30
+    minAmount: 1
+    maxAmount: 1
+  9:
+    material: STONE_SWORD
+    name: "Stone Sword"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  10:
+    material: GOLD_SWORD
+    name: "Golden Sword"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  11:
+    material: BOW
+    name: "Bow"
+    chance: 0.20
+    minAmount: 1
+    maxAmount: 1
+  12:
+    material: FLINT_AND_STEEL
+    name: "Flint and Steel"
+    chance: 0.20
+    minAmount: 1
+    maxAmount: 1
+  13:
+    material: FISHING_ROD
+    name: "Fishing Rod"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  14:
+    material: CHAINMAIL_HELMET
+    name: "Chainmail Helmet"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  15:
+    material: CHAINMAIL_CHESTPLATE
+    name: "Chainmail Chestplate"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  16:
+    material: CHAINMAIL_LEGGINGS
+    name: "Chainmail Leggings"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  17:
+    material: CHAINMAIL_BOOTS
+    name: "Chainmail Boots"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  18:
+    material: GOLD_HELMET
+    name: "Golden Helmet"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  19:
+    material: GOLD_CHESTPLATE
+    name: "Golden Chestplate"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  20:
+    material: GOLD_LEGGINGS
+    name: "Golden Leggings"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  21:
+    material: GOLD_BOOTS
+    name: "Golden Boots"
+    chance: 0.25
+    minAmount: 1
+    maxAmount: 1
+  22:
+    material: COOKED_BEEF
+    name: "Cooked Beaf"
+    chance: 0.25
+    minAmount: 4
+    maxAmount: 8
+  23:
+    material: APPLE
+    name: "Apple"
+    chance: 0.15
+    minAmount: 2
+    maxAmount: 4
+  24:
+    material: GOLDEN_APPLE
+    name: "Golden Apple"
+    chance: 0.15
+    minAmount: 1
+    maxAmount: 1
+  25:
+    material: WATER_BUCKET
+    name: "Water Bucket"
+    chance: 0.20
+    minAmount: 1
+    maxAmount: 1
+  26:
+    material: LAVA_BUCKET
+    name: "Lava Bucket"
+    chance: 0.20
+    minAmount: 1
+    maxAmount: 1
+
+
+#Locations of middle chests!
+chests:
+  locations:
+    Atlantis:
+      - "-3,71,3"
+      - "-3,71,-5"
+      - "4,72,-5"
+      - "4,71,3"
+    Halloween:
+      - "5,67,8"
+      - "-8,68,7"
+      - "-7,67,-8"
+      - "8,67,-7"
+      - "7,84,-9"
+      - "-7,84,9"
+      - "9,84,9"
+      - "-9,84,9"
+      - "-9,84,-9"
+      - "9,84,-9"
+      - "18,68,-11"
+
+#Locations of stats holograms!
+holograms:
+  locations:
+    kills:
+      x: 827
+      y: 28
+      z: 243
+    wins:
+      x: 819
+      y: 29
+      z: 240
+    deaths:
+      x:
+      y:
+      z:
